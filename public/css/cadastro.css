@@ -1,0 +1,62 @@
+
+form{
+
+    margin: 30px auto;
+    width: 600px;
+    padding: 1em;
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+}
+
+form div + div{
+    margin-top: 1em;
+}
+
+label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input{
+    background: #fcf8e3;
+    font-size: 1em sans-serif;
+    width: 310px;
+    -moz-box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: .5em;
+}
+
+#cidade{
+    width: 150px;
+}
+#sexo{
+    width: 50px;
+}
+#ddd{
+    width: 50px;
+}
+#telefone{
+    width: 190px;
+}
+
+input:focus{
+    border-color: #000000;
+}
+
+.button{
+    padding-left: 90px;
+}
+button{
+    font-size: 15px;
+    border-radius: 1em;
+    background: #6b9dbb;
+    margin-left: .5em;
+}
+.style1{
+    color: red;
+}
+h2{
+    text-align: center;
+}
