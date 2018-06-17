@@ -11,7 +11,7 @@
                 <th>Autor</th>
             </tr>
 
-            @foreach($lista_noticias as $noticia)
+            @foreach($noticias as $noticia)
                 <tr>
                     <td>{{$noticia->id}}</td>
                     <td>{{$noticia->titulo}}</td>

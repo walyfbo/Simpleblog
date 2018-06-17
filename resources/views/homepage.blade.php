@@ -42,6 +42,31 @@
                 <h3>Quem eu sou?</h3>
                 <p>Lorem ipsum...</p>
             </div>-->
+            <div class="container">
+        <h1 class="titulo">Noticias Cadastradas</h1>
+
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Tituo</th>
+                <th>Descrição</th>
+                <th>Autor</th>
+            </tr>
+
+            @foreach($noticias as $noticia)
+                <tr>
+                    <td>{{$noticia->id}}</td>
+                    <td>{{$noticia->titulo}}</td>
+                    <td>{{$noticia->descricao}}</td>
+                    <td>{{$noticia->autor}}</td>
+                </tr>
+            @endforeach
+        </table>
+        <a href="" class="btn btn-secondary">
+            <img src="css\mais.ico"> Cadastrar
+        </a>
+
+    </div>
             <div class="container-fluid bg-3 text-center">
                 <h3>Onde me encontrar</h3>
                 <div class="row">

@@ -24,3 +24,4 @@ Route::get('CadastroUsuario/store',"UsuarioController@store");
 
 
 
+
