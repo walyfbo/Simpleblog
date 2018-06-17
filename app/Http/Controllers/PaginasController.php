@@ -21,6 +21,7 @@
         public  function ListaNoticia(){
             return view('ListaNoticia');
         }
+        
 
 
         //-------------------------------------------------------------------------//

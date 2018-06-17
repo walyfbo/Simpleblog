@@ -13,7 +13,7 @@ class CreateNoticiasTable extends Migration
      */
     public function up()
     {
-        Schema::create('noticia', function (Blueprint $table) {
+        Schema::create('noticias', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titulo');
             $table->text('texto');
@@ -29,6 +29,6 @@ class CreateNoticiasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('noticia');
+        Schema::dropIfExists('noticias');
     }
 }
