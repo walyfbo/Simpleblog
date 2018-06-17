@@ -11,12 +11,12 @@
                 <th>Autor</th>
             </tr>
 
-            @foreach($lista_usuarios as $usuario)
+            @foreach($lista_noticias as $noticia)
                 <tr>
-                    <td>{{$usuario->id}}</td>
-                    <td>{{$usuario->titulo}}</td>
-                    <td>{{$usuario->descricao}}</td>
-                    <td>{{$usuario->autor}}</td>
+                    <td>{{$noticia->id}}</td>
+                    <td>{{$noticia->titulo}}</td>
+                    <td>{{$noticia->descricao}}</td>
+                    <td>{{$noticia->autor}}</td>
 
                     <td>
                         <a href="">
