@@ -16,7 +16,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Noticia::class, function (Faker $faker) {
     return [
         'titulo' => $faker->sentence(15),
-        'texto' => $faker->sentence(10),
+        'texto' => $faker->sentence(500),
         'autor' => $faker->name
     ];
 });

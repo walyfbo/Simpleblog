@@ -43,30 +43,20 @@
                 <p>Lorem ipsum...</p>
             </div>-->
             <div class="container">
-        <h1 class="titulo">Noticias Cadastradas</h1>
-
-        <table class="table table-striped">
-            <tr>
-                <th>Id</th>
-                <th>Tituo</th>
-                <th>Descrição</th>
-                <th>Autor</th>
-            </tr>
-
-            @foreach($noticias as $noticia)
-                <tr>
-                    <td>{{$noticia->id}}</td>
-                    <td>{{$noticia->titulo}}</td>
-                    <td>{{$noticia->descricao}}</td>
-                    <td>{{$noticia->autor}}</td>
-                </tr>
-            @endforeach
-        </table>
-        <a href="" class="btn btn-secondary">
-            <img src="css\mais.ico"> Cadastrar
-        </a>
-
-    </div>
+                <h1 class="titulo">O que tem de novo!</h1>
+                @foreach($noticias as $noticia)
+                    <div class="col-md-12 blog-post">
+                        <div class="post-title">
+                            <h1>{{$noticia->titulo}}</h1>
+                        </div>  
+                        <div class="post-info">
+                            <span>{{$noticia->updated_at}} / por <a href="#" target="_blank">{{$noticia->autor}}</a></span>
+                        </div>  
+                        <p>{{$noticia->texto}}</p>
+                        <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leia mais</span></a>
+                    </div>
+                @endforeach
+        </div>
             <div class="container-fluid bg-3 text-center">
                 <h3>Onde me encontrar</h3>
                 <div class="row">

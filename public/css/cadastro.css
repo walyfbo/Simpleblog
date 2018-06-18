@@ -60,3 +60,13 @@ button{
 h2{
     text-align: center;
 }
+
+.boxpw {
+    padding: 10px;
+    height: 100%;
+    width:100%;
+    border: 2px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-color: gray;
+}

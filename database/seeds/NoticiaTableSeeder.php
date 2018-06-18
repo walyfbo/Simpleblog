@@ -11,6 +11,6 @@ class NoticiaTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Noticia::class, 7)->create();
+        factory(App\Noticia::class, 10)->create();
     }
 }
