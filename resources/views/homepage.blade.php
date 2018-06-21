@@ -33,17 +33,9 @@
             </style>
         </head>
         <body>
-          <!-- <div class="container-fluid bg-1 text-center">
-                <h3>Meu Blog </h3>
-                <img src="tigre.jpg"  class="img-circles" alt="Bird">
-                <h3>Bem vindo ao meu blog</h3>
-            </div>
-            <div class="container-fluid bg-2 text-center">
-                <h3>Quem eu sou?</h3>
-                <p>Lorem ipsum...</p>
-            </div>-->
             <div class="container">
                 <h1 class="titulo">O que tem de novo!</h1>
+                <hr>
                 @foreach($noticias as $noticia)
                     <div class="col-md-12 blog-post">
                         <div class="post-title">
@@ -56,25 +48,8 @@
                         <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leia mais</span></a>
                     </div>
                 @endforeach
-        </div>
-            <div class="container-fluid bg-3 text-center">
-                <h3>Onde me encontrar</h3>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>lorim ipsum...</p>
-                        <img src="tigre.jpg" alt="Image">
-                    </div>
-                    <div class="col-sm-4">
-                        <p>lorim ipsum...</p>
-                        <img src="tigre.jpg" alt="Image">
-                    </div>
-                    <div class="col-sm-4">
-                        <p>lorim ipsum...</p>
-                        <img src="tigre.jpg" alt="Image">
-                    </div>
-                </div>
+                <hr>
             </div>
-
         </body>
     </html>
 

@@ -4,35 +4,25 @@
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="css\CadastroNoticia.css" type="text/css"/>
-    <title>Login de Acesso</title>
+    <title>Cadastro de Noticias</title>
+    <div class="row">
+        <div class="col-lg-2">
+            <form action="/create/noticia" method="post">
+                {{csrf_field()}}
 
-    <form action="Conexao\validacao.php" method="post">
-        <div>
-            <div>
-                <h2>Nova Publicação</h2>
-            </div>
-            <div>
-                <label for="titulo">Titulo:</label>
-                <input type="text" id="titulo" required="required"/>
-            </div>
-            <label for="descricao">Descrição:</label>
-            <div>
-
-                <textarea id="descricao" rows="10" cols="80">
-
-                </textarea>
-            </div>
-            <div>
                 <label for="autor">Autor:</label>
-                <input type="text" id="autor" required="required"/>
-            </div>
-            <div class="button">
-                <button id="CadastrarNoticia" type="submit" value="CadastrarNoticia">Cadastrar Noticia</button>
-                <a href="">Criar uma Conta</a>
+                <input type="text" id="autor" class="form-control input-lg" name="autor" placeholder="Autor"></input>
+            
+                <label for="titulo" >Titulo:</label>
+                <input type="text" id="titulo" class="form-control input-lg" name="titulo" placeholder="Título"></input>
 
-            </div>
+                <label for="descricao">Descrição:</label>
+                <textarea class="form-control" rows="8" id="descricao" name ="descricao" placeholder="Descrição"></textarea>
+
+                <br>
+                <button class="btn btn-success">Enviar</button>
+        </form>
         </div>
-    </form>
-
+    </div>
 
 @endsection

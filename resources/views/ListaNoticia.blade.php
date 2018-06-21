@@ -2,36 +2,29 @@
 @section('conteudo')
     <div class="container">
         <h1 class="titulo">Noticias Cadastradas</h1>
-
-        <table class="table table-striped">
-            <tr>
-                <th>Id</th>
-                <th>Tituo</th>
-                <th>Descrição</th>
-                <th>Autor</th>
-            </tr>
-
-            @foreach($noticias as $noticia)
+        <div class="table-responsive">
+            <table class="table table-hover">
                 <tr>
-                    <td>{{$noticia->id}}</td>
-                    <td>{{$noticia->titulo}}</td>
-                    <td>{{$noticia->descricao}}</td>
-                    <td>{{$noticia->autor}}</td>
-
-                    <td>
-                        <a href="">
-                            <img src="css\editar.ico" title="Editar"/>
-                        </a>
-                        <a href="" class="actions delete">
-                            <img src="css\deletar.ico" title="Deletar"/>
-                        </a>
-                    </td>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Descrição</th>
+                    <th>Autor</th>
                 </tr>
-            @endforeach
-        </table>
-        <a href="" class="btn btn-secondary">
-            <img src="css\mais.ico"> Cadastrar
-        </a>
 
+                @foreach($noticias as $noticia)
+                    <tr>
+                        <td>{{$noticia->id}}</td>
+                        <td>{{$noticia->titulo}}</td>
+                        <td>{{$noticia->texto}}</td>
+                        <td>{{$noticia->autor}}</td>
+                    <td>
+                    <a href="{{route('noticia.delete', ['id' => $noticia->id])}}" class="btn btn-danger">Deletar</a><a href="{{route('noticia.update', ['id' => $noticia->id])}}" class="btn btn-warning">Editar</a>
+                    </td>
+                    </tr>
+                @endforeach
+            </table>
+        </div>
+
+        <a href="/CadastroNoticia" class="btn btn-primary">Cadastrar</a>
     </div>
 @endsection
